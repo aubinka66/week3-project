@@ -3,21 +3,31 @@
   <head>
     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
     <title>Picture Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js"></script>
   </head>
   <body>
-    <h1>Click on your favorite image.</h1>
+    <h1>Click the image you want to purchase.</h1>
     <br>
     <br>
     <br>
 
       <ul class="flex-container">
-<img src="https://github.com/codefellows/sea-201d5/blob/master/week-3/assets/bag.jpg?raw=true"/class="flex-item" id="firstImage" onclick="generateFirstPictureSlot()">
-<img src="https://github.com/codefellows/sea-201d5/blob/master/week-3/assets/banana.jpg?raw=true"/class="flex-item" id="secondImage" onclick="generateSecondPictureSlot()">
-<img src="https://github.com/codefellows/sea-201d5/blob/master/week-3/assets/boots.jpg?raw=true"/class="flex-item" id="thirdImage" onclick="generateThirdPictureSlot()">
+<img src=""/class="flex-item" id="firstImage" onclick="generateFirstPictureSlot()">
+<img src=""/class="flex-item" id="secondImage" onclick="generateSecondPictureSlot()">
+<img src=""/class="flex-item" id="thirdImage" onclick="generateThirdPictureSlot()">
       </ul>
+<br>
+<br>
+<button id="button" hidden="true">DISPLAY RESULTS!!!</button>
+<br>
+<br>
 
+<p id='displayAll'>
+
+</p>
+<canvas id="myChart" width="1000" height="400"></canvas>
   </body>
-  <script src="app.js">
+  <script src="newattempt.js">
 
   </script>
 </html>

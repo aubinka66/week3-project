@@ -18,6 +18,7 @@ function handleClickOnFirst(){
 console.log("first image was clicked " + firstClicks + " times.");
 //trying to add event listener on click to change all pictures
 if (console.log){
+
   console.log(i);
   pictureNumberPicked.push(i);
   console.log(pictureNumberPicked);
@@ -50,22 +51,23 @@ function handleClickOnThird(){
     generateSecondPictureSlot();
   }
 }
-//below trying to create 1 random generator to eliminate repeating photos.
-
 
 //end of random generator.
 function generateFirstPictureSlot(){
-i=Math.floor(Math.random()*(13));
+i=Math.floor(Math.random()*(14));
+console.log(i);
 document.getElementById('firstImage').src = Converter[i];
 
 };
 function generateSecondPictureSlot(){
-i=Math.floor(Math.random()*(13));
+i=Math.floor(Math.random()*(14));
+console.log(i);
 document.getElementById('secondImage').src = Converter[i];
 
 };
 function generateThirdPictureSlot(){
-i=Math.floor(Math.random()*(13));
+i=Math.floor(Math.random()*(14));
+console.log(i);
 document.getElementById('thirdImage').src = Converter[i];
 };
 
