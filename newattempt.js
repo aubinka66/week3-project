@@ -23,7 +23,6 @@ function ObjectsNameAndLink(name, webAddress, clicks, timesDisplayed){
   objectArray.push(this);
 // this.pictureDisplayed = pictureDisplayed;
 };
-
 var bag = new ObjectsNameAndLink('bag', "https://github.com/codefellows/sea-201d5/blob/master/week-3/assets/bag.jpg?raw=true", 0, 0);
 var banana = new ObjectsNameAndLink('banana', "https://github.com/codefellows/sea-201d5/blob/master/week-3/assets/banana.jpg?raw=true", 0, 0);
 var boots = new ObjectsNameAndLink('boots', "https://github.com/codefellows/sea-201d5/blob/master/week-3/assets/boots.jpg?raw=true", 0, 0);

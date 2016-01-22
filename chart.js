@@ -1062,7 +1062,6 @@
 								}
 							});
 							
-
 							helpers.each(Elements, function(element) {
 								xPositions.push(element.x);
 								yPositions.push(element.y);

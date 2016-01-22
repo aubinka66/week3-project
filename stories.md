@@ -14,6 +14,7 @@ As a marketer/research team we want to give the user the option to view results 
 As a marketer/research team we want to show every product at least once.
 as a marketer/research team we want the test subjects to know what company is selling these products.
 
+
 As a developer, I want to use object oriented programming to build this site, so that the site will be more effective and the code will be easier to read and understand.
 As a developer, I want to implement a constructor function, so that I can reuse code and eliminate much of the duplication in my JavaScript
 As a developer, I want to utilize CSS and images to please my clients.
