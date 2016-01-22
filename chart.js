@@ -1061,6 +1061,7 @@
 									Elements.push(dataCollection[dataIndex]);
 								}
 							});
+							
 
 							helpers.each(Elements, function(element) {
 								xPositions.push(element.x);

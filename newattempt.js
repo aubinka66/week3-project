@@ -10,8 +10,6 @@ var buttonId = document.getElementById("button");
 buttonId.addEventListener('click', buttonClick);
 var TOTALCLICKS=0;
 
-
-
 var picturesClickedChart = [];
 
 var objectArray = [];
@@ -25,7 +23,6 @@ function ObjectsNameAndLink(name, webAddress, clicks, timesDisplayed){
   objectArray.push(this);
 // this.pictureDisplayed = pictureDisplayed;
 };
-
 
 var bag = new ObjectsNameAndLink('bag', "https://github.com/codefellows/sea-201d5/blob/master/week-3/assets/bag.jpg?raw=true", 0, 0);
 var banana = new ObjectsNameAndLink('banana', "https://github.com/codefellows/sea-201d5/blob/master/week-3/assets/banana.jpg?raw=true", 0, 0);
@@ -71,7 +68,6 @@ function display() {
   document.getElementById('thirdImage').src = itemArray[arr[2]].webAddress; itemArray[arr[2]].timesDisplayed +=1;
 };
 display();
-// objectArray[i].percentClick = (objectArray[i].clicks/objectArray[i].timesDisplayed)*100
 
 function handleClickOnFirst(){
 TOTALCLICKS +=1;
@@ -135,19 +131,10 @@ for(var i =0; i < objectArray.length;i++){
  var myBarChart = new Chart(ctx).Bar(data);
 };
 
-// function chart (){
-//
-//   for (var i = 0; i < array.length; i++) {
-//     array[i]
-//   }
-//
-//
-// in an array, morning code,
-// }
-
-function generateFirstPictureSlot(){
-};
-function generateSecondPictureSlot(){
-};
-function generateThirdPictureSlot(){
+var chartData = localStorage.getItem('persistentchart');
+if(chartData) {
+  helloKyle = JSON.parse(chartData);
+  } else {
+    console.log('LOCAL STORAGE IS EMPTY...Initializing');
+    localStorage.setItem('persistentchart', JSON.stringify(helloKyle));
 };
